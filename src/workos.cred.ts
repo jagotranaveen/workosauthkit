@@ -5,10 +5,3 @@ export const WORKOS_CLIENT_ID='client_01JB9J7A43RR2MSEA4HZTB476M'
 
 // //  configured in the WorkOS dashboard
 // const NEXT_PUBLIC_WORKOS_REDIRECT_URI="http://localhost:3000/api/identity/auth0-callback"
-
-
-
-// HSP cred
-
-// export const WORKOS_API_KEY='sk_test_a2V5XzAxSjRQNkVDNlhWOThHRjJLQ1gzWVNWRTFDLE1Sd0lLV0dIN0NQZVdYSmdEbmlmb3FtYkg'
-// export const WORKOS_CLIENT_ID='client_01J4P6ECFBBG7Z88AKD4GQ5GMR'

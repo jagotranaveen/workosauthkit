@@ -1,9 +1,9 @@
 'use server';
 
 import { WorkOS } from '@workos-inc/node';
-import { WORKOS_API_KEY, WORKOS_CLIENT_ID } from './workos.cred';
 
-const workos = new WorkOS(WORKOS_API_KEY);
+
+const workos = process.env.REACT_APP_WORKOS_API_KEY;
 
 export async function signIn(prevState: any, formData: FormData) {
   try {
@@ -11,7 +11,7 @@ export async function signIn(prevState: any, formData: FormData) {
     // In a real application, you would probably store the user in a token (JWT)
     // and store that token in your DB or use cookies.
     return await workos.userManagement.authenticateWithPassword({
-      clientId: WORKOS_CLIENT_ID || '',
+      clientId: process.env.REACT_APP_WORKOS_CLIENT_ID || '',
       email: String(formData.get('email')),
       password: String(formData.get('password')),
     });

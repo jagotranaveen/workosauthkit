@@ -5,7 +5,7 @@ import { WORKOS_API_KEY } from '@/workos.cred';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 // Initialize WorkOS SDK
-const workos = new WorkOS(WORKOS_API_KEY);
+const workos = new WorkOS(process.env.REACT_APP_WORKOS_API_KEY);
 
 // Function to fetch user details
 async function getUserDetail(userId: string) {

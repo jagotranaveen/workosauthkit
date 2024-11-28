@@ -1,7 +1,7 @@
 // pages/api/getUserDetail.ts
 
 import { WorkOS } from '@workos-inc/node';
-import { config.WORKOS_API_KEY } from '@/workos.cred';
+
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 // Initialize WorkOS SDK

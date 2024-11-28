@@ -1,6 +1,6 @@
 // Abhinav cred
-export const WORKOS_API_KEY='APIKEY!!!!!'
-export const WORKOS_CLIENT_ID='CLIENTID00001'
+export const WORKOS_API_KEY= process.env.WORKOS_API_KEY
+export const WORKOS_CLIENT_ID= process.env.WORKOS_CLIENT_ID
 //  const WORKOS_COOKIE_PASSWORD=process.env.WORKOS_COOKIE_PASSWORD
 
 // //  configured in the WorkOS dashboard

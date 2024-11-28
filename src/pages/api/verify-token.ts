@@ -5,9 +5,10 @@
 import { WorkOS } from '@workos-inc/node';
 import * as jose from 'jose';
 import { NextApiRequest, NextApiResponse } from 'next';
-import { WORKOS_API_KEY} from '@/workos.cred';
 
-const workos = new WorkOS(WORKOS_API_KEY);
+
+// Initialize WorkOS SDK
+const workos = new WorkOS(process.env.REACT_APP_WORKOS_API_KEY);
 
 // Function to verify the JWT token
 async function verifyJwtToken(token: string): Promise<any> {
